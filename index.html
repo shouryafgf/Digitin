@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digiting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="top-bar">
+        <div class="logo">
+          <img src="https://www.svgrepo.com/show/499982/graph-up.svg" alt="Logo" class="icon" />
+          <span class="brand">Digiting</span>
+        </div>
+
+        <nav class="nav desktop-nav">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#results">Results</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+          ☰
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobileMenu">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("mobileMenu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>
